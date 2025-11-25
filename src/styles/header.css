@@ -1,0 +1,139 @@
+
+header {
+  width: 100%;
+  padding: 10px 8%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 15px 80px;
+}
+
+#nav_logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#nav_list {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: gold;
+}
+
+#mobile_btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#mobile_menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  padding: 20px;
+}
+
+#mobile_menu.active {
+  display: flex;
+}
+
+#mobile_nav_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#mobile_nav_list a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 1170px) {
+  #nav_list {
+    display: none;
+  }
+  #mobile_btn {
+    display: block;
+  }
+}
+
+#dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.dish {
+  position: relative; 
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.dish:hover {
+  transform: scale(1.05);
+}
+
+.dish img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dish h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.dishes-row {
+  display: flex;
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+.dishes-row::-webkit-scrollbar {
+  display: none; 
+}
+

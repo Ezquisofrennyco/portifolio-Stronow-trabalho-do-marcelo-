@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StroNow - Landing Page</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="stylesheet" href="src/styles/header.css">
+  <link rel="stylesheet" href="src/styles/home.css">
+</head>
+
+<body>
+  <div id="background"></div>
+
+  <header>
+    <nav id="navbar">
+      <div id="nav_logo">
+        <i class="fa-solid fa-bowl-food"></i> StroNow
+      </div>
+
+      <ul id="nav_list">
+        <li class="nav-item active"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#menu">Cardápio</a></li>
+        <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+      </ul>
+
+      <!-- BOTÃO DE MENU MOBILE (pode ser imagem também) -->
+      <button id="mobile_btn" aria-label="Abrir menu">
+        <div class="menu-hamburguer">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </button>
+    </nav>
+
+    <!-- MENU MOBILE FORA DO BOTÃO -->
+    <div id="mobile_menu">
+      <ul id="mobile_nav_list">
+        <li class="nav-item"><a href="#home">Início</a></li>
+        <li class="nav-item"><a href="#menu">Cardápio</a></li>
+        <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
+      </ul>
+      <button class="btn-default">Peça aqui</button>
+    </div>
+  </header>
+
+  <main id="content">
+    <section id="home">
+      <div id="cta">
+        <h1 class="title">Seu <span>strogonoff</span> favorito, onde você estiver!</h1>
+        <p class="description">Aqui, o strogonoff é o protagonista! Oferecemos marmitas deliciosas feitas com ingredientes fresquinhos e um toque especial que só a gente tem.</p>
+
+        <div class="shape" aria-hidden="true"></div>
+
+        <div id="cta_buttons">
+          <a href="#" class="btn-default">Ver cardápio</a>
+          <a href="tel:+55555555555" id="phone_button">
+            <button class="btn-default"><i class="fa-solid fa-phone"></i> (21) 98765-4321</button>
+          </a>
+        </div>
+
+        <div class="social-media-buttons">
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+
+      <div id="banner">
+        <img src="images/strogonoffizao.png" alt="strogonoff">
+      </div>
+    </section>
+
+   <section id="menu">
+  <section id="featured">
+    <h2 class="featured-title">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <span>Nossos Mais Pedidos</span>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </h2>
+  </section>
+
+  <div class="carousel-container">
+    <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <div class="dishes-row" id="dishCarousel">
+          <div class="dish">
+            <img src="images/dish.png_frango.png" alt="Strogonoff de Frango">
+            <p><strong>Tradicional de Frango</strong> — creme de leite e batata palha crocante.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+
+          <div class="dish">
+            <img src="images/dish.png_carne.png" alt="Strogonoff de Carne">
+            <p><strong>De Carne</strong> — tiras macias de alcatra e molho cremoso.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+
+          <div class="dish">
+            <img src="images/dish.png_camarao.png" alt="Strogonoff de Camarão">
+            <p><strong>De Camarão</strong> — toque picante e leve aroma de conhaque.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+
+          <div class="dish">
+            <img src="images/dish.png_premium.png" alt="StroNom Premium">
+            <p><strong>StroNom Premium</strong> — filé mignon ao vinho branco e cogumelos frescos.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+
+          <div class="dish">
+            <img src="images/dish.png_trufado.png" alt="Strogonoff Trufado">
+            <p><strong>Trufado</strong> — azeite trufado e mix de cogumelos.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+
+          <div class="dish">
+            <img src="images/dish.png_frangobacon.png" alt="Frango com Bacon">
+            <p><strong>Frango com Bacon Crocante</strong> — combinação perfeita entre cremoso e crocante.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+
+          <div class="dish">
+  <img src="images/dish.png_frangogrelhado.png" alt="Frango Grelhado">
+  <p><strong>Fit de Frango Grelhado</strong> — molho leve com iogurte natural e arroz integral.</p>
+  <button class="btn-order">Peça agora</button>
+  <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+
+    <div class="dish">
+  <img src="images/dish.png_vegetariano.png" alt="Vegetariano">
+  <p><strong>Vegetariano</strong> — cogumelos, palmito e grão-de-bico no molho cremoso.</p>
+  <button class="btn-order">Peça agora</button>
+  <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+</div>
+
+
+          <div class="dish">
+            <img src="images/dish.png_veganotofu.png" alt="Vegano de Tofu">
+            <p><strong>Vegano de Tofu</strong> — leite de coco e shiitake grelhado.</p>
+            <button class="btn-order">Peça agora</button>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+
+        <button class="carousel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+  <script>
+    // ---- CARROSSEL ----
+    const carousel = document.getElementById("dishCarousel");
+    document.querySelector(".carousel-btn.next").addEventListener("click", () => {
+      carousel.scrollBy({ left: 300, behavior: "smooth" });
+    });
+    document.querySelector(".carousel-btn.prev").addEventListener("click", () => {
+      carousel.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    // ---- BOTÕES DE FAVORITO ----
+    document.querySelectorAll('.fav-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+      });
+    });
+
+    // ---- MENU MOBILE ----
+    const mobileBtn = document.getElementById('mobile_btn');
+    const mobileMenu = document.getElementById('mobile_menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
